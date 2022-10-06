@@ -1,0 +1,21 @@
+    // Variable
+$font-primary: 'Roboto', sans-serif; 
+
+$color-dark: #222;
+$color-light: #fff;
+$color-accent: #ff00bb;
+    // Mixin 
+
+    // Responsive 
+@mixin responsive($width: 480px) {
+    @media screen and (max-width: $width) { @content }  
+};
+
+//Print
+@mixin print {
+    @media print{
+        @content
+    }
+    
+};
+
